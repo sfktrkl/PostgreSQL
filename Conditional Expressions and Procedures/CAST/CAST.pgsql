@@ -1,0 +1,11 @@
+SELECT CAST('5' AS INTEGER) as new_int;
+
+SELECT '5'::INTEGER AS new_int;
+
+SELECT CAST(inventory_id AS VARCHAR)
+FROM rental
+LIMIT 2;
+
+SELECT CHAR_LENGTH(CAST(inventory_id AS VARCHAR))
+FROM rental
+LIMIT 2;
